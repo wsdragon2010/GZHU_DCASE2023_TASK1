@@ -1,0 +1,11 @@
+index,mid,display_name
+0,airport,Airport
+1,shopping_mall,Indoor shopping mall
+2,metro_station,Metro station
+3,street_pedestrian,Pedestrian street
+4,public_square,Public square
+5,street_traffic,Street with medium level of traffic
+6,tram,Travelling by a tram
+7,bus,Travelling by a bus
+8,metro,Travelling by an underground metro
+9,park,Urban park
