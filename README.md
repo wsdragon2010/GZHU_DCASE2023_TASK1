@@ -3,3 +3,5 @@ This code base was used for the GZHU team's submission to DCASE2023 Task I Low C
 The entire code framework was written based on [PANNs](https://github.com/qiuqiangkong/audioset_tagging_cnn) and the pre-trained model we used, resnet38, can be downloaded in [there](https://zenodo.org/record/3987831).This code can be run using the same environment as PANNs.
 ## Reassemble Audio
 First, use the open source code of [CPJKU](https://github.com/CPJKU/cpjku_dcase22) to reassemble the 1s audio clip into 10s audio
+## Create hdf5
+First use a scp file with spaces as spacers to store the meta information, fill in the order of audio name, label, path, device label. Then modify the "scp_path" and "workspace" in h5.sh to the corresponding paths in your file system, where workspace is the path where h5 is stored.Then run`sh scripts/h5.sh`
