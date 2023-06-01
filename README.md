@@ -5,7 +5,7 @@ The entire code framework was written based on [PANNs](https://github.com/qiuqia
 First, use the open source code of [CPJKU](https://github.com/CPJKU/cpjku_dcase22) to reassemble the 1s audio clip into 10s audio
 ## Create hdf5
 First use a scp file with spaces as spacers to store the meta information, fill in the order of audio name, label, path, device label. Then modify the "scp_path" and "workspace" in h5.sh to the corresponding paths in your file system, where workspace is the path where h5 is stored. Then run\
-`sh scripts/h5.sh`
+`sh scripts/2_dcase_with_device_h5.sh`
 ## Train
 After Hdf5 is created, you can enter the training phase, first create a workspace for your training logs and models and other information. And "full_train.h5" and "eval.h5" are stored in your "workspace/indexes", and in and change "WORKSPACE" to the path you created in "\*_train.sh".\
 If you wish to train the target model alone, then run\
@@ -15,4 +15,4 @@ To train the teacher model alone, run\
 To train using deep mutual learning (DML), run\
 `sh scripts/dml_train.sh`\
 To fine tune using knowledge distillation after DML training, please run\
-`sh scripts/kd_fineturn.sh`\
+`sh scripts/kd_fineturn.sh`
